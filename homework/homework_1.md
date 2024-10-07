@@ -17,7 +17,7 @@ Type "help" for help.
 
 postgres=#
 ```
-2. Залил файл с данными о Тайских перевозках - **(файл 600мб)**
+2. Залил файл с данными о Тайских перевозках - **файл 600мб**
 ```cmd
 wget https://storage.googleapis.com/thaibus/thai_small.tar.gz && tar -xf thai_small.tar.gz && psql < thai.sql
 ```
@@ -39,13 +39,9 @@ thai=# \dt book.*
  book   | seatcategory | table | postgres
  book   | tickets      | table | postgres
 (10 rows)
-
-thai=#
 ```
 3. Подсчитал количество поездок - **5185505**
 ```cmd
-thai=# \c thai
-You are now connected to database "thai" as user "postgres".
 thai=# select count(*) from book.tickets;
   count
 ---------
