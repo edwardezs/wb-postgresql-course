@@ -73,7 +73,7 @@ test=# SHOW default_transaction_isolation;
  read committed
 (1 row)
 ``` 
-6. Начал новые транзакции в обоих сессиях
+6. Начал новые транзакции в обеих сессиях
 ```cmd
 test=# BEGIN; // первый сеанс
 BEGIN
